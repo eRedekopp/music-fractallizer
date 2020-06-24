@@ -5,8 +5,7 @@ increased, the ratios between tempos will have the same ratios as the
 frequencies in the melody and so the melody will be audible again at
 extremely high tempos (hence, "fractal").
 
-The user will have control over the tempo (of the original,
-un-modulated melody) and playback speed (of the waveform overall).
+The user will have control over the tempo of the waveform.
 
 Iterations:
 

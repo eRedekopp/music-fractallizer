@@ -1,0 +1,10 @@
+
+Assumptions about xml files:
+    - they will have at least one part
+        - only the first is used
+    - they do not contain any notes below C1
+    - No double sharps or flats
+    - No chords
+
+
+All frequencies are given in 12-TET
