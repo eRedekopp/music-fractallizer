@@ -1,0 +1,12 @@
+The music fractallizer is a program that reads a MusicXML file and represents it as sine waves. These sine waves are then played with their tempo modulated such that when the speed of the playback is increased, the ratios between tempos will have the same ratios as the frequencies in the melody and so the melody will be audible again at extremely high tempos (hence, "fractal").
+
+The user will have control over the tempo (of the original, un-modulated melody) and playback speed (of the waveform overall).
+
+Iterations:
+
+1. Read the xml file and print out string representations of each note to console
+2. Read the xml file and play it in a JavaFX panel
+3. Same as 3 but add the tempo and speed dials
+4. Read the xml file, compute the modulated tempos, and print out the tempo ratios to console
+5. Read the xml file, compute the modulated tempos, and loop the fractallized melody
+6. Same as 5 but figure out how to get extra layers of fractals (ie. speed it up even more and you'll hear it again)
