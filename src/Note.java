@@ -1,5 +1,5 @@
 /**
- * Represents a single note. This Object is immutable; all fields are final
+ * Represents a single note or rest. This Object is immutable; all fields are final
  */
 public class Note {
 
@@ -9,7 +9,7 @@ public class Note {
     private final double freq;
 
     /**
-     * The duration of this note as a number of quarter notes at 60BPM
+     * The duration of this note as a number of quarter notes at 60BPM (ie. seconds)
      */
     private final double dur;
 
@@ -26,6 +26,10 @@ public class Note {
         return dur;
     }
 
+    public boolean isRest() {
+        return freq == 0;
+    }
+
     /**
      * Return a new Note with the same pitch but the duration adjusted by the given proportion
      *
@@ -38,6 +42,6 @@ public class Note {
 
     @Override
     public String toString() {
-        return "Duration: " + dur + "Frequency: " + freq;
+        return "Duration: " + dur + " Frequency: " + freq;
     }
 }

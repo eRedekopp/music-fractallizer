@@ -8,26 +8,19 @@ public class Melody {
     /**
      * The notes in this melody
      */
-    private final Note[] notes;
+    private final List<Note> notes;
 
     public Melody(List<Note> notes) {
-        this.notes = (Note[]) notes.toArray();
+        this.notes = notes;
     }
 
-    public Note[] getNotes() {
+    public List<Note> getNotes() {
         return notes;
-    }
-
-    public double getNumBeats() {
-        double count = 0;
-        for (Note note : notes)
-            count += note.getDur();
-        return count;
     }
 
     @Override
     public String toString() {
-        if (notes.length == 0) {
+        if (notes.size() == 0) {
             return "Empty Melody";
         }
         StringBuilder builder = new StringBuilder();
